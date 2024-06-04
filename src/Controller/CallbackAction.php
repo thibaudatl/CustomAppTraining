@@ -39,6 +39,8 @@ final class CallbackAction
         $session = $request->getSession();
 
         $pimUrl = $session->get('pim_url');
+//        $pimUrl = "https://theakademy-serenity-2.support.cloud.akeneo.com/";
+
         if (empty($pimUrl)) {
             throw new \LogicException('Can\'t retrieve PIM url, please restart the authorization process.');
         }

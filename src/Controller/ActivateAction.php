@@ -13,9 +13,13 @@ final class ActivateAction
 {
     private const OAUTH_SCOPES = [
         'read_products',
+        'write_products',
         'read_catalog_structure',
         'read_channel_localization',
         'read_attribute_options',
+        'write_catalog_structure',
+        'write_channel_localization',
+        'write_attribute_options',
         'read_catalogs',
         'write_catalogs',
         'delete_catalogs',

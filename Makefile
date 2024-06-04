@@ -10,7 +10,7 @@ ifneq (,$(wildcard ./.env))
 endif
 
 APP_ENV ?= dev
-DOCKER_PORT_HTTP ?= 8080
+DOCKER_PORT_HTTP ?= 8090
 DOCKER_BUILDKIT ?= 1
 
 ifeq ($(APP_ENV), prod)

@@ -222,7 +222,7 @@ class PimCatalogApiClient
      */
     public function getMappedProducts(
         string $catalogId,
-        int $limit = 10,
+        int $limit = 30,
         ?string $searchAfter = null,
         ?string $updatedAfter = null,
         ?string $updatedBefore = null

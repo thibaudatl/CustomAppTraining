@@ -11,6 +11,7 @@ use App\PimApi\PimCatalogApiClient;
 use App\Query\FetchMappedProductsQuery;
 use App\Query\FetchProductsQuery;
 use App\Query\GuessCurrentLocaleQuery;
+use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -39,7 +40,7 @@ final class ShowCatalogAction
             $this->twig->render('catalog.html.twig', [
                 'products' => $products,
                 'catalog' => $catalog,
-                'connected_app_id' => $this->akeneoClientId,
+                'connected_app_id' => $this->akeneoClientId
             ])
         );
     }

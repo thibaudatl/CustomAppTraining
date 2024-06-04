@@ -31,6 +31,8 @@ final class WelcomeAction
         $session = $request->getSession();
 
         $pimUrl = $request->query->get('pim_url');
+//        $pimUrl = "https://theakademy-serenity-2.support.cloud.akeneo.com/";
+
         if (empty($pimUrl)) {
             return new Response($this->twig->render('welcome.html.twig'));
         }

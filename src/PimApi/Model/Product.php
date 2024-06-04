@@ -12,6 +12,7 @@ class Product
     public function __construct(
         public readonly string $uuid,
         public readonly string $label,
+        public string $description,
         public readonly array $attributes = [],
     ) {
     }

@@ -24,6 +24,8 @@ class PimApiClientFactory
     public function __invoke(): AkeneoPimClientInterface
     {
         $pimURL = $this->pimURLStorage->getPimURL();
+//        $pimUrl = "https://theakademy-serenity-2.support.cloud.akeneo.com/";
+
         if (empty($pimURL)) {
             throw new MissingPimUrlException();
         }
